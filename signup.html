@@ -1,4 +1,378 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Create an Account | BookHive online bookstore"><title>Create an Account | BookHive</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/books.css"><link rel="stylesheet" href="css/responsive.css"></head><body><div class="announcement-bar">A little more reading, a lot more wonder. <strong>Free delivery on orders above ₹499</strong></div>
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BookHive<small>Stories worth keeping</small></span></a><nav class="main-nav" aria-label="Main navigation"><a class="" href="index.html">Home</a><a class="" href="books.html">Books</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a></nav><div class="header-actions"><a class="cart-link" href="cart.html">Bag <span class="cart-count">0</span></a><a class="button button-small button-outline" href="login.html">Login</a><a class="button button-small" href="signup.html">Sign up</a></div></header><main>
-<section class="auth-section signup-auth"><div class="auth-aside"><span class="eyebrow">MAKE ROOM FOR STORIES</span><h1>A world of books.<br>One happy <em>you.</em></h1><p>Create your BookHive account and make your reading journey a little more personal.</p><div class="auth-benefits"><span>✦ Discover books picked for curious minds</span><span>✦ Keep your favourite reads close</span><span>✦ Get thoughtful reading recommendations</span></div><div class="auth-decoration"><span>READ</span><span>IMAGINE</span><span>REPEAT</span></div></div><div class="auth-card"><a class="back-link" href="index.html">← Back to home</a><span class="eyebrow">JOIN THE BOOKHIVE COMMUNITY</span><h2>Create your account.</h2><p class="muted">A few details, then a whole world of stories.</p><form action="#" method="post" class="auth-form"><div class="form-group"><label for="fullname">Full name *</label><input type="text" id="fullname" name="fullname" placeholder="Your full name" minlength="3" autocomplete="name" required></div><div class="form-group"><label for="signup-email">Email address *</label><input type="email" id="signup-email" name="email" placeholder="you@example.com" autocomplete="email" required></div><div class="form-group"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" autocomplete="tel"></div><div class="form-group"><label for="signup-password">Password *</label><input type="password" id="signup-password" name="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" required><small>Use at least 8 characters.</small></div><div class="form-group"><label for="confirm-password">Confirm password *</label><input type="password" id="confirm-password" name="confirm-password" placeholder="Enter password again" minlength="8" required></div><div class="form-group"><label for="city">City</label><select id="city" name="city"><option value="">Choose your city</option><option value="bengaluru">Bengaluru</option><option value="mumbai">Mumbai</option><option value="delhi">Delhi</option><option value="hyderabad">Hyderabad</option><option value="chennai">Chennai</option><option value="pune">Pune</option><option value="kolkata">Kolkata</option><option value="other">Other</option></select></div><fieldset class="interest-field"><legend>What do you love reading?</legend><div class="interest-grid"><label><input type="checkbox" name="interests" value="fiction"> Fiction</label><label><input type="checkbox" name="interests" value="education"> Education</label><label><input type="checkbox" name="interests" value="biography"> Biographies</label><label><input type="checkbox" name="interests" value="business"> Business</label><label><input type="checkbox" name="interests" value="children"> Children's</label><label><input type="checkbox" name="interests" value="comics"> Comics</label></div></fieldset><label class="check-line"><input type="checkbox" id="terms" name="terms" required><span>I agree to the <a href="#">Terms and Conditions</a>.</span></label><label class="check-line"><input type="checkbox" id="newsletter" name="newsletter"><span>Send me weekly book recommendations.</span></label><button class="button button-full" type="submit">Create my account ↗</button><p class="auth-switch">Already have an account? <a href="login.html">Login here</a></p></form><p class="auth-footnote">This form is a visual front-end only. Account creation needs backend integration.</p></div></section></main><footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">B</span><span>BookHive<small>Stories worth keeping</small></span></a><p>For the love of stories, the joy of learning, and the magic of one more page.</p><div class="footer-links"><a href="books.html">Browse books</a><a href="about.html">Our story</a><a href="contact.html">Get in touch</a><a href="login.html">My account</a></div></div><div class="footer-bottom"><span>© 2026 BookHive. Made for readers, everywhere.</span><span>Keep turning pages. ✦</span></div></footer></body></html>
+<html lang="en">
+
+<head>
+    <!-- Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create an Account | BookHive online bookstore">
+
+    <title>Create an Account | BookHive</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Announcement bar -->
+    <div class="announcement-bar">
+        A little more reading, a lot more wonder.
+        <strong>Free delivery on orders above ₹499</strong>
+    </div>
+
+    <!-- Header and navigation -->
+    <header class="site-header">
+
+        <!-- Website brand -->
+        <a class="brand" href="index.html">
+            <span class="brand-mark">B</span>
+
+            <span>
+                BookHive
+                <small>Stories worth keeping</small>
+            </span>
+        </a>
+
+        <!-- Main navigation links -->
+        <nav class="main-nav" aria-label="Main navigation">
+            <a class="" href="index.html">Home</a>
+            <a class="" href="books.html">Books</a>
+            <a class="" href="about.html">About</a>
+            <a class="" href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Header action buttons -->
+        <div class="header-actions">
+            <a class="cart-link" href="cart.html">
+                Bag <span class="cart-count">0</span>
+            </a>
+
+            <a class="button button-small button-outline" href="login.html">
+                Login
+            </a>
+
+            <a class="button button-small" href="signup.html">
+                Sign up
+            </a>
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Signup section -->
+        <section class="auth-section signup-auth">
+
+            <!-- Left side: Signup introduction -->
+            <div class="auth-aside">
+
+                <span class="eyebrow">MAKE ROOM FOR STORIES</span>
+
+                <h1>
+                    A world of books.<br>
+                    One happy <em>you.</em>
+                </h1>
+
+                <p>
+                    Create your BookHive account and make your reading
+                    journey a little more personal.
+                </p>
+
+                <!-- Benefits of joining BookHive -->
+                <div class="auth-benefits">
+                    <span>✦ Discover books picked for curious minds</span>
+                    <span>✦ Keep your favourite reads close</span>
+                    <span>✦ Get thoughtful reading recommendations</span>
+                </div>
+
+                <!-- Decorative text -->
+                <div class="auth-decoration">
+                    <span>READ</span>
+                    <span>IMAGINE</span>
+                    <span>REPEAT</span>
+                </div>
+
+            </div>
+
+            <!-- Right side: Signup form -->
+            <div class="auth-card">
+
+                <a class="back-link" href="index.html">
+                    ← Back to home
+                </a>
+
+                <span class="eyebrow">JOIN THE BOOKHIVE COMMUNITY</span>
+
+                <h2>Create your account.</h2>
+
+                <p class="muted">
+                    A few details, then a whole world of stories.
+                </p>
+
+                <form action="#" method="post" class="auth-form">
+
+                    <!-- Full name -->
+                    <div class="form-group">
+                        <label for="fullname">Full name *</label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Your full name"
+                            minlength="3"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <!-- Email address -->
+                    <div class="form-group">
+                        <label for="signup-email">Email address *</label>
+
+                        <input
+                            type="email"
+                            id="signup-email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <!-- Phone number -->
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10-digit mobile number"
+                            pattern="[0-9]{10}"
+                            autocomplete="tel"
+                        >
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="signup-password">Password *</label>
+
+                        <input
+                            type="password"
+                            id="signup-password"
+                            name="password"
+                            placeholder="At least 8 characters"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <small>Use at least 8 characters.</small>
+                    </div>
+
+                    <!-- Confirm password -->
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm password *</label>
+
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Enter password again"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <!-- City selection -->
+                    <div class="form-group">
+                        <label for="city">City</label>
+
+                        <select id="city" name="city">
+                            <option value="">Choose your city</option>
+                            <option value="bengaluru">Bengaluru</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="pune">Pune</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Reading interests -->
+                    <fieldset class="interest-field">
+                        <legend>What do you love reading?</legend>
+
+                        <div class="interest-grid">
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="fiction"
+                                >
+                                Fiction
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="education"
+                                >
+                                Education
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="biography"
+                                >
+                                Biographies
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="business"
+                                >
+                                Business
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="children"
+                                >
+                                Children's
+                            </label>
+
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="comics"
+                                >
+                                Comics
+                            </label>
+
+                        </div>
+                    </fieldset>
+
+                    <!-- Terms and conditions -->
+                    <label class="check-line">
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            required
+                        >
+
+                        <span>
+                            I agree to the
+                            <a href="#">Terms and Conditions</a>.
+                        </span>
+                    </label>
+
+                    <!-- Newsletter preference -->
+                    <label class="check-line">
+                        <input
+                            type="checkbox"
+                            id="newsletter"
+                            name="newsletter"
+                        >
+
+                        <span>
+                            Send me weekly book recommendations.
+                        </span>
+                    </label>
+
+                    <!-- Signup button -->
+                    <button class="button button-full" type="submit">
+                        Create my account ↗
+                    </button>
+
+                    <!-- Login link -->
+                    <p class="auth-switch">
+                        Already have an account?
+                        <a href="login.html">Login here</a>
+                    </p>
+
+                </form>
+
+                <!-- Frontend limitation note -->
+                <p class="auth-footnote">
+                    This form is a visual front-end only.
+                    Account creation needs backend integration.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <!-- Footer brand -->
+            <a class="brand brand-footer" href="index.html">
+                <span class="brand-mark">B</span>
+
+                <span>
+                    BookHive
+                    <small>Stories worth keeping</small>
+                </span>
+            </a>
+
+            <p>
+                For the love of stories, the joy of learning,
+                and the magic of one more page.
+            </p>
+
+            <!-- Footer navigation -->
+            <div class="footer-links">
+                <a href="books.html">Browse books</a>
+                <a href="about.html">Our story</a>
+                <a href="contact.html">Get in touch</a>
+                <a href="login.html">My account</a>
+            </div>
+
+        </div>
+
+        <!-- Copyright and footer message -->
+        <div class="footer-bottom">
+            <span>© 2026 BookHive. Made for readers, everywhere.</span>
+            <span>Keep turning pages. ✦</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,4 +1,338 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Login | BookHive online bookstore"><title>Login | BookHive</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/books.css"><link rel="stylesheet" href="css/responsive.css"></head><body><div class="announcement-bar">A little more reading, a lot more wonder. <strong>Free delivery on orders above ₹499</strong></div>
-<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BookHive<small>Stories worth keeping</small></span></a><nav class="main-nav" aria-label="Main navigation"><a class="" href="index.html">Home</a><a class="" href="books.html">Books</a><a class="" href="about.html">About</a><a class="" href="contact.html">Contact</a></nav><div class="header-actions"><a class="cart-link" href="cart.html">Bag <span class="cart-count">0</span></a><a class="button button-small button-outline" href="login.html">Login</a><a class="button button-small" href="signup.html">Sign up</a></div></header><main>
-<section class="auth-section"><div class="auth-aside"><span class="eyebrow">WELCOME BACK, READER</span><h1>Your next chapter<br>is waiting.</h1><p>Pick up where you left off and find a little more wonder between the pages.</p><div class="auth-quote">“A reader lives a thousand lives before he dies.”<small>— George R. R. Martin</small></div><div class="auth-decoration"><span>READ</span><span>IMAGINE</span><span>REPEAT</span></div></div><div class="auth-card"><a class="back-link" href="index.html">← Back to home</a><span class="eyebrow">YOUR BOOKHIVE ACCOUNT</span><h2>Welcome back.</h2><p class="muted">Login to continue exploring your next favourite.</p><form action="#" method="post" class="auth-form"><div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required></div><div class="form-group"><div class="label-row"><label for="password">Password</label><a href="#">Forgot password?</a></div><input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" autocomplete="current-password" required></div><label class="check-line"><input type="checkbox" id="remember" name="remember"> <span>Keep me logged in</span></label><button class="button button-full" type="submit">Login to BookHive ↗</button><p class="auth-switch">New to BookHive? <a href="signup.html">Create an account</a></p></form><p class="auth-footnote">By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p></div></section></main><footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">B</span><span>BookHive<small>Stories worth keeping</small></span></a><p>For the love of stories, the joy of learning, and the magic of one more page.</p><div class="footer-links"><a href="books.html">Browse books</a><a href="about.html">Our story</a><a href="contact.html">Get in touch</a><a href="login.html">My account</a></div></div><div class="footer-bottom"><span>© 2026 BookHive. Made for readers, everywhere.</span><span>Keep turning pages. ✦</span></div></footer></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Login | BookHive online bookstore"
+    >
+
+    <title>Login | BookHive</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        A little more reading, a lot more wonder.
+        <strong>Free delivery on orders above ₹499</strong>
+    </div>
+
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+
+        <!-- Website Logo -->
+        <a class="brand" href="index.html">
+
+            <span class="brand-mark">B</span>
+
+            <span>
+                BookHive
+                <small>Stories worth keeping</small>
+            </span>
+
+        </a>
+
+
+        <!-- Navigation Links -->
+        <nav class="main-nav" aria-label="Main navigation">
+
+            <a class="" href="index.html">Home</a>
+            <a class="" href="books.html">Books</a>
+            <a class="" href="about.html">About</a>
+            <a class="" href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <!-- Cart and Account Links -->
+        <div class="header-actions">
+
+            <a class="cart-link" href="cart.html">
+                Bag
+                <span class="cart-count">0</span>
+            </a>
+
+            <a
+                class="button button-small button-outline"
+                href="login.html"
+            >
+                Login
+            </a>
+
+            <a
+                class="button button-small"
+                href="signup.html"
+            >
+                Sign up
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Login Section -->
+        <section class="auth-section">
+
+
+            <!-- Left Side: Welcome Message -->
+            <div class="auth-aside">
+
+                <span class="eyebrow">
+                    WELCOME BACK, READER
+                </span>
+
+                <h1>
+                    Your next chapter<br>
+                    is waiting.
+                </h1>
+
+                <p>
+                    Pick up where you left off and find a little more
+                    wonder between the pages.
+                </p>
+
+
+                <!-- Inspirational Quote -->
+                <div class="auth-quote">
+
+                    “A reader lives a thousand lives before he dies.”
+
+                    <small>
+                        — George R. R. Martin
+                    </small>
+
+                </div>
+
+
+                <!-- Decorative Text Labels -->
+                <div class="auth-decoration">
+
+                    <span>READ</span>
+                    <span>IMAGINE</span>
+                    <span>REPEAT</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Side: Login Form -->
+            <div class="auth-card">
+
+
+                <!-- Back to Home -->
+                <a class="back-link" href="index.html">
+                    ← Back to home
+                </a>
+
+
+                <!-- Form Heading -->
+                <span class="eyebrow">
+                    YOUR BOOKHIVE ACCOUNT
+                </span>
+
+                <h2>Welcome back.</h2>
+
+                <p class="muted">
+                    Login to continue exploring your next favourite.
+                </p>
+
+
+                <!-- Login Form -->
+                <form
+                    action="#"
+                    method="post"
+                    class="auth-form"
+                >
+
+
+                    <!-- Email Address -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <div class="label-row">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            minlength="6"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Remember Me Checkbox -->
+                    <label class="check-line">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            name="remember"
+                        >
+
+                        <span>Keep me logged in</span>
+
+                    </label>
+
+
+                    <!-- Submit Button -->
+                    <button
+                        class="button button-full"
+                        type="submit"
+                    >
+                        Login to BookHive ↗
+                    </button>
+
+
+                    <!-- Signup Link -->
+                    <p class="auth-switch">
+
+                        New to BookHive?
+
+                        <a href="signup.html">
+                            Create an account
+                        </a>
+
+                    </p>
+
+                </form>
+
+
+                <!-- Terms and Privacy Notice -->
+                <p class="auth-footnote">
+
+                    By continuing, you agree to our
+
+                    <a href="#">Terms</a>
+
+                    and
+
+                    <a href="#">Privacy Policy</a>.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+
+            <!-- Footer Logo -->
+            <a class="brand brand-footer" href="index.html">
+
+                <span class="brand-mark">B</span>
+
+                <span>
+                    BookHive
+                    <small>Stories worth keeping</small>
+                </span>
+
+            </a>
+
+
+            <!-- Footer Description -->
+            <p>
+                For the love of stories, the joy of learning,
+                and the magic of one more page.
+            </p>
+
+
+            <!-- Footer Navigation Links -->
+            <div class="footer-links">
+
+                <a href="books.html">Browse books</a>
+
+                <a href="about.html">Our story</a>
+
+                <a href="contact.html">Get in touch</a>
+
+                <a href="login.html">My account</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright Information -->
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 BookHive. Made for readers, everywhere.
+            </span>
+
+            <span>
+                Keep turning pages. ✦
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

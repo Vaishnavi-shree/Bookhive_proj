@@ -1,12 +1,853 @@
-/* Responsive adjustments: tablet, mobile, wide screens */
-@media (max-width: 900px){
-  .site-header{flex-wrap:wrap;gap:14px;padding:15px 24px}.main-nav{order:3;width:100%;justify-content:center;gap:24px}.header-actions{margin-left:auto}.hero{grid-template-columns:1fr .8fr;gap:20px;padding-left:6vw;padding-right:6vw}.hero-art{transform:scale(.86);transform-origin:center}.book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-controls{flex-wrap:wrap}.catalog-controls>.muted{margin-left:0}.product-layout{grid-template-columns:.8fr 1.2fr}.product-cover-wrap{min-height:380px}.product-cover{height:330px}.product-cover strong{font-size:30px}.cart-layout{grid-template-columns:1fr}.order-summary{max-width:none}.auth-section,.signup-auth{grid-template-columns:1fr 1fr;gap:25px}.auth-aside{min-height:450px}.auth-card{padding:28px 24px}.contact-section{grid-template-columns:.8fr 1.2fr}.contact-form-card{padding:24px}.about-story{grid-template-columns:1fr;gap:20px}.story-label h2 br{display:none}
+/* =========================================
+   BookHive - Responsive Stylesheet
+
+   Adjusts the website layout for:
+   1. Tablets and smaller laptops
+   2. Mobile phones
+   3. Small mobile screens
+   4. Large desktop screens
+========================================= */
+
+
+/* =========================================
+   1. TABLETS AND SMALLER LAPTOPS
+   Screen width: 900px and below
+========================================= */
+
+@media (max-width: 900px) {
+
+    /* Header and navigation */
+
+    .site-header {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 15px 24px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+
+    /* Home page hero section */
+
+    .hero {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 20px;
+
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .hero-art {
+        transform: scale(0.86);
+        transform-origin: center;
+    }
+
+
+    /* Book cards and catalog controls */
+
+    .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .catalog-controls {
+        flex-wrap: wrap;
+    }
+
+    .catalog-controls > .muted {
+        margin-left: 0;
+    }
+
+
+    /* Individual book details page */
+
+    .product-layout {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .product-cover-wrap {
+        min-height: 380px;
+    }
+
+    .product-cover {
+        height: 330px;
+    }
+
+    .product-cover strong {
+        font-size: 30px;
+    }
+
+
+    /* Shopping cart layout */
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        max-width: none;
+    }
+
+
+    /* Login and signup pages */
+
+    .auth-section,
+    .signup-auth {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .auth-aside {
+        min-height: 450px;
+    }
+
+    .auth-card {
+        padding: 28px 24px;
+    }
+
+
+    /* Contact page */
+
+    .contact-section {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .contact-form-card {
+        padding: 24px;
+    }
+
+
+    /* About page */
+
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .story-label h2 br {
+        display: none;
+    }
 }
-@media (max-width: 680px){
-  body{font-size:14px}.announcement-bar{font-size:9px;padding:8px}.site-header{justify-content:center;padding:14px 18px;gap:12px}.brand{font-size:22px}.main-nav{order:3;gap:16px;overflow-x:auto;justify-content:flex-start;padding:5px 0;width:100%}.main-nav a{font-size:11px;white-space:nowrap}.main-nav a.active:after{bottom:-6px}.header-actions{gap:7px}.header-actions .button-small{padding:8px 10px;font-size:10px}.cart-link{font-size:11px;margin-right:1px}.section{padding:54px 20px}.hero{grid-template-columns:1fr;padding:54px 22px 25px;gap:8px}.hero h1{font-size:48px}.hero-copy>p{font-size:13px;line-height:1.8}.hero-art{height:300px;transform:scale(.8);margin:-5px auto -18px;width:100%;max-width:430px}.sun-shape{width:280px;height:280px;right:10%;top:0}.hero-sticker{right:0;bottom:7%}.hero-note{margin-top:28px}.trust-strip{grid-template-columns:1fr;gap:15px;padding:22px;align-items:start}.trust-strip>div{justify-content:flex-start}.section-heading{align-items:flex-start;flex-direction:column;gap:12px;margin-bottom:24px}.section-heading h2{font-size:32px}.book-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 13px}.cover{height:230px;padding:15px 10px}.cover strong{font-size:23px}.cover-habits strong{font-size:22px}.cover-sapiens strong{font-size:26px}.cover-deepwork strong{font-size:25px}.book-info h3{font-size:15px}.book-info p{font-size:10px}.book-bottom{margin-top:10px;padding-top:9px}.book-bottom strong{font-size:12px}.add-link{font-size:9px}.category-band{padding:55px 20px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category-tile{min-height:160px;padding:17px}.category-tile strong{font-size:21px}.newsletter{flex-direction:column;align-items:flex-start;gap:20px}.newsletter h2{font-size:30px}.newsletter-form{width:100%}.newsletter-form .button{padding:11px 12px}.footer-main{grid-template-columns:1fr;gap:20px;padding-bottom:28px}.footer-links{justify-content:flex-start}.footer-bottom{font-size:9px;flex-direction:column;gap:8px}.page-hero{padding:52px 20px 34px}.page-hero h1{font-size:40px}.page-hero>p{font-size:12px}.catalog-section{padding-top:40px}.catalog-top{align-items:stretch;flex-direction:column;gap:20px}.catalog-top h2{font-size:30px}.catalog-search{width:100%}.catalog-controls{align-items:stretch;flex-direction:column;gap:12px}.catalog-controls label{justify-content:space-between}.catalog-controls select{min-width:55%;max-width:70%}.catalog-grid{gap:20px 13px}.product-detail{padding-top:25px}.product-detail>.breadcrumb{flex-wrap:wrap;margin-bottom:20px}.product-layout{grid-template-columns:1fr;gap:25px}.product-cover-wrap{min-height:360px;padding:20px}.product-cover{height:310px;width:220px}.product-cover strong{font-size:31px}.product-copy h1{font-size:40px}.product-price{font-size:24px}.related-section{padding-top:10px}.cart-section{padding-top:35px}.cart-heading{align-items:flex-start;flex-direction:column;gap:6px}.cart-heading h2{font-size:25px}.cart-item{grid-template-columns:72px minmax(0,1fr) 50px;gap:12px;padding:17px 0}.cart-mini-cover{width:68px;height:100px;padding:7px}.cart-mini-cover strong{font-size:13px;margin:7px 0}.cart-mini-cover .cover-kicker{font-size:4px}.cart-mini-cover small{font-size:4px}.cart-item-info h3{font-size:15px}.cart-item-info p{font-size:10px}.order-summary{padding:23px 20px}.auth-section,.signup-auth{grid-template-columns:1fr;padding:40px 18px 55px;background:linear-gradient(180deg,#f4e7d7 0,#f4e7d7 280px,#fffdf9 280px,#fffdf9 100%);gap:25px}.auth-aside,.signup-auth .auth-aside{position:relative;top:auto;padding-top:0;min-height:auto}.auth-aside h1{font-size:39px;margin-bottom:12px}.auth-aside>p{font-size:12px}.auth-quote{display:none}.auth-decoration{position:static;margin-top:20px}.auth-card{max-width:520px;padding:26px 21px}.auth-card h2{font-size:28px}.signup-auth .auth-card{padding:25px 19px}.signup-auth .auth-aside h1{font-size:37px}.interest-grid{grid-template-columns:repeat(2,1fr)}.about-hero{padding-bottom:35px}.about-illustration{height:180px;margin-top:30px;gap:8px}.about-book{width:90px;height:130px;font-size:14px}.book-b{height:155px}.about-sun{font-size:70px}.about-story{padding-top:50px;padding-bottom:50px}.story-label h2{font-size:32px}.values-band{padding:50px 20px}.values-grid{grid-template-columns:1fr}.values-grid article{padding:22px}.about-cta{flex-direction:column;align-items:flex-start}.about-cta h2{font-size:30px}.contact-section{grid-template-columns:1fr;padding-top:44px;gap:32px}.contact-intro h2{font-size:32px}.contact-form-card{padding:23px 18px}.contact-form-card h2{font-size:25px}.contact-form .form-two-col{grid-template-columns:1fr;gap:0}.breadcrumb{font-size:10px}
+
+
+/* =========================================
+   2. MOBILE PHONES
+   Screen width: 680px and below
+========================================= */
+
+@media (max-width: 680px) {
+
+    /* General page styling */
+
+    body {
+        font-size: 14px;
+    }
+
+    .announcement-bar {
+        font-size: 9px;
+        padding: 8px;
+    }
+
+    .section {
+        padding: 54px 20px;
+    }
+
+
+    /* Header and navigation */
+
+    .site-header {
+        justify-content: center;
+        padding: 14px 18px;
+        gap: 12px;
+    }
+
+    .brand {
+        font-size: 22px;
+    }
+
+    .main-nav {
+        order: 3;
+        gap: 16px;
+
+        overflow-x: auto;
+        justify-content: flex-start;
+
+        padding: 5px 0;
+        width: 100%;
+    }
+
+    .main-nav a {
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .main-nav a.active:after {
+        bottom: -6px;
+    }
+
+    .header-actions {
+        gap: 7px;
+    }
+
+    .header-actions .button-small {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .cart-link {
+        font-size: 11px;
+        margin-right: 1px;
+    }
+
+
+    /* Home page hero section */
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 54px 22px 25px;
+        gap: 8px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-copy > p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .hero-art {
+        height: 300px;
+
+        transform: scale(0.8);
+
+        margin: -5px auto -18px;
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .sun-shape {
+        width: 280px;
+        height: 280px;
+
+        right: 10%;
+        top: 0;
+    }
+
+    .hero-sticker {
+        right: 0;
+        bottom: 7%;
+    }
+
+    .hero-note {
+        margin-top: 28px;
+    }
+
+
+    /* Trust and benefits section */
+
+    .trust-strip {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 22px;
+        align-items: start;
+    }
+
+    .trust-strip > div {
+        justify-content: flex-start;
+    }
+
+
+    /* Section headings */
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+
+        margin-bottom: 24px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    /* Book card grid */
+
+    .book-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 13px;
+    }
+
+    .cover {
+        height: 230px;
+        padding: 15px 10px;
+    }
+
+    .cover strong {
+        font-size: 23px;
+    }
+
+    .cover-habits strong {
+        font-size: 22px;
+    }
+
+    .cover-sapiens strong {
+        font-size: 26px;
+    }
+
+    .cover-deepwork strong {
+        font-size: 25px;
+    }
+
+    .book-info h3 {
+        font-size: 15px;
+    }
+
+    .book-info p {
+        font-size: 10px;
+    }
+
+    .book-bottom {
+        margin-top: 10px;
+        padding-top: 9px;
+    }
+
+    .book-bottom strong {
+        font-size: 12px;
+    }
+
+    .add-link {
+        font-size: 9px;
+    }
+
+
+    /* Book categories */
+
+    .category-band {
+        padding: 55px 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .category-tile {
+        min-height: 160px;
+        padding: 17px;
+    }
+
+    .category-tile strong {
+        font-size: 21px;
+    }
+
+
+    /* Newsletter section */
+
+    .newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .newsletter h2 {
+        font-size: 30px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+    }
+
+    .newsletter-form .button {
+        padding: 11px 12px;
+    }
+
+
+    /* Footer */
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 28px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        font-size: 9px;
+
+        flex-direction: column;
+        gap: 8px;
+    }
+
+
+    /* Page headings */
+
+    .page-hero {
+        padding: 52px 20px 34px;
+    }
+
+    .page-hero h1 {
+        font-size: 40px;
+    }
+
+    .page-hero > p {
+        font-size: 12px;
+    }
+
+
+    /* Books listing page */
+
+    .catalog-section {
+        padding-top: 40px;
+    }
+
+    .catalog-top {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .catalog-top h2 {
+        font-size: 30px;
+    }
+
+    .catalog-search {
+        width: 100%;
+    }
+
+    .catalog-controls {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .catalog-controls label {
+        justify-content: space-between;
+    }
+
+    .catalog-controls select {
+        min-width: 55%;
+        max-width: 70%;
+    }
+
+    .catalog-grid {
+        gap: 20px 13px;
+    }
+
+
+    /* Book detail page */
+
+    .product-detail {
+        padding-top: 25px;
+    }
+
+    .product-detail > .breadcrumb {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .product-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-cover-wrap {
+        min-height: 360px;
+        padding: 20px;
+    }
+
+    .product-cover {
+        height: 310px;
+        width: 220px;
+    }
+
+    .product-cover strong {
+        font-size: 31px;
+    }
+
+    .product-copy h1 {
+        font-size: 40px;
+    }
+
+    .product-price {
+        font-size: 24px;
+    }
+
+    .related-section {
+        padding-top: 10px;
+    }
+
+
+    /* Shopping cart */
+
+    .cart-section {
+        padding-top: 35px;
+    }
+
+    .cart-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .cart-heading h2 {
+        font-size: 25px;
+    }
+
+    .cart-item {
+        grid-template-columns: 72px minmax(0, 1fr) 50px;
+        gap: 12px;
+        padding: 17px 0;
+    }
+
+    .cart-mini-cover {
+        width: 68px;
+        height: 100px;
+        padding: 7px;
+    }
+
+    .cart-mini-cover strong {
+        font-size: 13px;
+        margin: 7px 0;
+    }
+
+    .cart-mini-cover .cover-kicker {
+        font-size: 4px;
+    }
+
+    .cart-mini-cover small {
+        font-size: 4px;
+    }
+
+    .cart-item-info h3 {
+        font-size: 15px;
+    }
+
+    .cart-item-info p {
+        font-size: 10px;
+    }
+
+    .order-summary {
+        padding: 23px 20px;
+    }
+
+
+    /* Login and signup pages */
+
+    .auth-section,
+    .signup-auth {
+        grid-template-columns: 1fr;
+
+        padding: 40px 18px 55px;
+
+        background: linear-gradient(
+            180deg,
+            #f4e7d7 0,
+            #f4e7d7 280px,
+            #fffdf9 280px,
+            #fffdf9 100%
+        );
+
+        gap: 25px;
+    }
+
+    .auth-aside,
+    .signup-auth .auth-aside {
+        position: relative;
+        top: auto;
+
+        padding-top: 0;
+        min-height: auto;
+    }
+
+    .auth-aside h1 {
+        font-size: 39px;
+        margin-bottom: 12px;
+    }
+
+    .auth-aside > p {
+        font-size: 12px;
+    }
+
+    .auth-quote {
+        display: none;
+    }
+
+    .auth-decoration {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .auth-card {
+        max-width: 520px;
+        padding: 26px 21px;
+    }
+
+    .auth-card h2 {
+        font-size: 28px;
+    }
+
+    .signup-auth .auth-card {
+        padding: 25px 19px;
+    }
+
+    .signup-auth .auth-aside h1 {
+        font-size: 37px;
+    }
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* About page */
+
+    .about-hero {
+        padding-bottom: 35px;
+    }
+
+    .about-illustration {
+        height: 180px;
+        margin-top: 30px;
+        gap: 8px;
+    }
+
+    .about-book {
+        width: 90px;
+        height: 130px;
+        font-size: 14px;
+    }
+
+    .book-b {
+        height: 155px;
+    }
+
+    .about-sun {
+        font-size: 70px;
+    }
+
+    .about-story {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .story-label h2 {
+        font-size: 32px;
+    }
+
+    .values-band {
+        padding: 50px 20px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid article {
+        padding: 22px;
+    }
+
+    .about-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-cta h2 {
+        font-size: 30px;
+    }
+
+
+    /* Contact page */
+
+    .contact-section {
+        grid-template-columns: 1fr;
+
+        padding-top: 44px;
+        gap: 32px;
+    }
+
+    .contact-intro h2 {
+        font-size: 32px;
+    }
+
+    .contact-form-card {
+        padding: 23px 18px;
+    }
+
+    .contact-form-card h2 {
+        font-size: 25px;
+    }
+
+    .contact-form .form-two-col {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    /* Breadcrumb navigation */
+
+    .breadcrumb {
+        font-size: 10px;
+    }
 }
-@media (max-width: 390px){
-  .header-actions .button-outline{display:none}.hero h1{font-size:42px}.hero-art{transform:scale(.72);margin-top:-18px;margin-bottom:-35px}.hero-actions{gap:15px}.hero-actions .button{font-size:10px;padding:12px}.book-grid{gap:18px 10px}.cover{height:205px}.cover strong{font-size:20px}.cover-kicker{font-size:6px}.book-bottom{align-items:flex-start;gap:7px;flex-direction:column}.add-link{font-size:9px}.catalog-search{gap:5px}.catalog-search .button{padding:10px}.cart-item{grid-template-columns:60px minmax(0,1fr) 45px;gap:9px}.cart-mini-cover{width:58px;height:88px}.auth-card{padding:22px 17px}.interest-grid{gap:8px}
+
+
+/* =========================================
+   3. VERY SMALL MOBILE SCREENS
+   Screen width: 390px and below
+========================================= */
+
+@media (max-width: 390px) {
+
+    /* Header buttons */
+
+    .header-actions .button-outline {
+        display: none;
+    }
+
+
+    /* Hero section */
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-art {
+        transform: scale(0.72);
+
+        margin-top: -18px;
+        margin-bottom: -35px;
+    }
+
+    .hero-actions {
+        gap: 15px;
+    }
+
+    .hero-actions .button {
+        font-size: 10px;
+        padding: 12px;
+    }
+
+
+    /* Book cards */
+
+    .book-grid {
+        gap: 18px 10px;
+    }
+
+    .cover {
+        height: 205px;
+    }
+
+    .cover strong {
+        font-size: 20px;
+    }
+
+    .cover-kicker {
+        font-size: 6px;
+    }
+
+    .book-bottom {
+        align-items: flex-start;
+        gap: 7px;
+        flex-direction: column;
+    }
+
+    .add-link {
+        font-size: 9px;
+    }
+
+
+    /* Catalog search */
+
+    .catalog-search {
+        gap: 5px;
+    }
+
+    .catalog-search .button {
+        padding: 10px;
+    }
+
+
+    /* Cart items */
+
+    .cart-item {
+        grid-template-columns: 60px minmax(0, 1fr) 45px;
+        gap: 9px;
+    }
+
+    .cart-mini-cover {
+        width: 58px;
+        height: 88px;
+    }
+
+
+    /* Authentication forms */
+
+    .auth-card {
+        padding: 22px 17px;
+    }
+
+    .interest-grid {
+        gap: 8px;
+    }
 }
-@media (min-width: 1400px){.hero{padding-left:max(10vw,100px);padding-right:max(10vw,100px)}.section{padding-left:max(9vw,100px);padding-right:max(9vw,100px)}.hero h1{font-size:72px}}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* =========================================
+   4. LARGE DESKTOP SCREENS
+   Screen width: 1400px and above
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .hero {
+        padding-left: max(10vw, 100px);
+        padding-right: max(10vw, 100px);
+    }
+
+    .section {
+        padding-left: max(9vw, 100px);
+        padding-right: max(9vw, 100px);
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+}
+
+
+/* =========================================
+   5. REDUCED MOTION ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

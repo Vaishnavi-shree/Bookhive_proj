@@ -1,29 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Review your BookHive shopping bag and order summary.">
-  <title>Your Cart | BookHive</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/books.css"><link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Review your BookHive shopping bag and order summary."
+    >
+
+    <title>Your Cart | BookHive</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-  <div class="announcement-bar">A little more reading, a lot more wonder. <strong>Free delivery on orders above ₹499</strong></div>
-  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">B</span><span>BookHive<small>Stories worth keeping</small></span></a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="books.html">Books</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="header-actions"><a class="cart-link" href="cart.html">Bag <span class="cart-count">2</span></a><a class="button button-small button-outline" href="login.html">Login</a><a class="button button-small" href="signup.html">Sign up</a></div></header>
-  <main>
-    <section class="page-hero compact-hero"><span class="eyebrow">YOUR READING JOURNEY</span><h1>Your book <em>bag.</em></h1><p>Good stories are worth taking home.</p><div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Your bag</span></div></section>
-    <section class="section cart-section"><div class="cart-layout">
-      <div class="cart-items"><div class="cart-heading"><h2>Shopping bag</h2><span class="muted">2 items · static HTML preview</span></div>
-        <div class="cart-table-wrap"><table class="cart-table">
-          <thead><tr><th scope="col">Book</th><th scope="col">Title</th><th scope="col">Price</th><th scope="col">Quantity</th><th scope="col">Subtotal</th><th scope="col">Remove</th></tr></thead>
-          <tbody>
-            <tr><td data-label="Book"><div class="cart-mini-cover cover cover-wings"><span class="cover-kicker">AN AUTOBIOGRAPHY</span><strong>WINGS<br>OF FIRE</strong><small>A.P.J. ABDUL KALAM</small><span class="cover-seal">BH</span></div></td><td data-label="Title"><strong class="cart-book-title">Wings of Fire</strong><small class="cart-book-author">A.P.J. Abdul Kalam</small></td><td data-label="Price">₹299</td><td data-label="Quantity"><label class="sr-only" for="qty-wings">Quantity for Wings of Fire</label><input id="qty-wings" type="number" value="1" min="1" max="10" class="qty-input"></td><td data-label="Subtotal"><strong>₹299</strong></td><td data-label="Remove"><button type="button" class="remove-btn" aria-label="Remove Wings of Fire">×</button></td></tr>
-            <tr><td data-label="Book"><div class="cart-mini-cover cover cover-alchemist"><span class="cover-kicker">FOLLOW YOUR DREAM</span><strong>THE<br>ALCHEMIST</strong><small>PAULO COELHO</small><span class="cover-sun">☼</span></div></td><td data-label="Title"><strong class="cart-book-title">The Alchemist</strong><small class="cart-book-author">Paulo Coelho</small></td><td data-label="Price">₹349</td><td data-label="Quantity"><label class="sr-only" for="qty-alchemist">Quantity for The Alchemist</label><input id="qty-alchemist" type="number" value="1" min="1" max="10" class="qty-input"></td><td data-label="Subtotal"><strong>₹349</strong></td><td data-label="Remove"><button type="button" class="remove-btn" aria-label="Remove The Alchemist">×</button></td></tr>
-          </tbody></table></div><a class="text-link continue-link" href="books.html">← Continue browsing</a>
-      </div>
-      <aside class="order-summary"><span class="eyebrow">THE LITTLE DETAILS</span><h2>Order summary</h2><dl class="summary-list"><div><dt>Subtotal</dt><dd>₹648</dd></div><div><dt>Delivery</dt><dd class="in-stock">Free</dd></div><div><dt>Taxes</dt><dd>Included</dd></div></dl><div class="summary-total"><span>Total</span><strong>₹648</strong></div><a class="button button-full" href="login.html">Continue to checkout ↗</a><p class="muted summary-note">This is a static front-end preview. Checkout and cart updates need JavaScript/backend integration.</p><div class="secure-note">♡ A little joy, carefully packed.</div></aside>
-    </div></section>
-  </main>
-  <footer class="site-footer"><div class="footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">B</span><span>BookHive<small>Stories worth keeping</small></span></a><p>For the love of stories, the joy of learning, and the magic of one more page.</p><div class="footer-links"><a href="books.html">Browse books</a><a href="about.html">Our story</a><a href="contact.html">Get in touch</a><a href="login.html">My account</a></div></div><div class="footer-bottom"><span>© 2026 BookHive. Made for readers, everywhere.</span><span>Keep turning pages. ✦</span></div></footer>
-</body></html>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        A little more reading, a lot more wonder.
+        <strong>Free delivery on orders above ₹499</strong>
+    </div>
+
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+
+            <span class="brand-mark">B</span>
+
+            <span>
+                BookHive
+                <small>Stories worth keeping</small>
+            </span>
+
+        </a>
+
+
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <!-- Cart and Account Links -->
+        <div class="header-actions">
+
+            <a class="cart-link" href="cart.html">
+                Bag
+                <span class="cart-count">2</span>
+            </a>
+
+            <a
+                class="button button-small button-outline"
+                href="login.html"
+            >
+                Login
+            </a>
+
+            <a
+                class="button button-small"
+                href="signup.html"
+            >
+                Sign up
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Cart Page Introduction -->
+        <section class="page-hero compact-hero">
+
+            <span class="eyebrow">
+                YOUR READING JOURNEY
+            </span>
+
+            <h1>
+                Your book <em>bag.</em>
+            </h1>
+
+            <p>
+                Good stories are worth taking home.
+            </p>
+
+
+            <!-- Breadcrumb Navigation -->
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>/</span>
+
+                <span>Your bag</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Shopping Cart Section -->
+        <section class="section cart-section">
+
+            <div class="cart-layout">
+
+
+                <!-- Left Side: Cart Items -->
+                <div class="cart-items">
+
+                    <div class="cart-heading">
+
+                        <h2>Shopping bag</h2>
+
+                        <span class="muted">
+                            2 items · static HTML preview
+                        </span>
+
+                    </div>
+
+
+                    <!-- Cart Items Table -->
+                    <div class="cart-table-wrap">
+
+                        <table class="cart-table">
+
+                            <!-- Table Headings -->
+                            <thead>
+                                <tr>
+                                    <th scope="col">Book</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Subtotal</th>
+                                    <th scope="col">Remove</th>
+                                </tr>
+                            </thead>
+
+
+                            <!-- Cart Item Details -->
+                            <tbody>
+
+
+                                <!-- Wings of Fire -->
+                                <tr>
+
+                                    <td data-label="Book">
+
+                                        <div class="cart-mini-cover cover cover-wings">
+
+                                            <span class="cover-kicker">
+                                                AN AUTOBIOGRAPHY
+                                            </span>
+
+                                            <strong>
+                                                WINGS<br>
+                                                OF FIRE
+                                            </strong>
+
+                                            <small>
+                                                A.P.J. ABDUL KALAM
+                                            </small>
+
+                                            <span class="cover-seal">
+                                                BH
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td data-label="Title">
+
+                                        <strong class="cart-book-title">
+                                            Wings of Fire
+                                        </strong>
+
+                                        <small class="cart-book-author">
+                                            A.P.J. Abdul Kalam
+                                        </small>
+
+                                    </td>
+
+
+                                    <td data-label="Price">
+                                        ₹299
+                                    </td>
+
+
+                                    <td data-label="Quantity">
+
+                                        <label
+                                            class="sr-only"
+                                            for="qty-wings"
+                                        >
+                                            Quantity for Wings of Fire
+                                        </label>
+
+                                        <input
+                                            id="qty-wings"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            max="10"
+                                            class="qty-input"
+                                        >
+
+                                    </td>
+
+
+                                    <td data-label="Subtotal">
+                                        <strong>₹299</strong>
+                                    </td>
+
+
+                                    <td data-label="Remove">
+
+                                        <button
+                                            type="button"
+                                            class="remove-btn"
+                                            aria-label="Remove Wings of Fire"
+                                        >
+                                            ×
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- The Alchemist -->
+                                <tr>
+
+                                    <td data-label="Book">
+
+                                        <div class="cart-mini-cover cover cover-alchemist">
+
+                                            <span class="cover-kicker">
+                                                FOLLOW YOUR DREAM
+                                            </span>
+
+                                            <strong>
+                                                THE<br>
+                                                ALCHEMIST
+                                            </strong>
+
+                                            <small>
+                                                PAULO COELHO
+                                            </small>
+
+                                            <span class="cover-sun">
+                                                ☼
+                                            </span>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td data-label="Title">
+
+                                        <strong class="cart-book-title">
+                                            The Alchemist
+                                        </strong>
+
+                                        <small class="cart-book-author">
+                                            Paulo Coelho
+                                        </small>
+
+                                    </td>
+
+
+                                    <td data-label="Price">
+                                        ₹349
+                                    </td>
+
+
+                                    <td data-label="Quantity">
+
+                                        <label
+                                            class="sr-only"
+                                            for="qty-alchemist"
+                                        >
+                                            Quantity for The Alchemist
+                                        </label>
+
+                                        <input
+                                            id="qty-alchemist"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            max="10"
+                                            class="qty-input"
+                                        >
+
+                                    </td>
+
+
+                                    <td data-label="Subtotal">
+                                        <strong>₹349</strong>
+                                    </td>
+
+
+                                    <td data-label="Remove">
+
+                                        <button
+                                            type="button"
+                                            class="remove-btn"
+                                            aria-label="Remove The Alchemist"
+                                        >
+                                            ×
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- Continue Shopping Link -->
+                    <a class="text-link continue-link" href="books.html">
+                        ← Continue browsing
+                    </a>
+
+                </div>
+
+
+                <!-- Right Side: Order Summary -->
+                <aside class="order-summary">
+
+                    <span class="eyebrow">
+                        THE LITTLE DETAILS
+                    </span>
+
+                    <h2>Order summary</h2>
+
+
+                    <!-- Price Breakdown -->
+                    <dl class="summary-list">
+
+                        <div>
+                            <dt>Subtotal</dt>
+                            <dd>₹648</dd>
+                        </div>
+
+                        <div>
+                            <dt>Delivery</dt>
+                            <dd class="in-stock">Free</dd>
+                        </div>
+
+                        <div>
+                            <dt>Taxes</dt>
+                            <dd>Included</dd>
+                        </div>
+
+                    </dl>
+
+
+                    <!-- Final Order Total -->
+                    <div class="summary-total">
+
+                        <span>Total</span>
+
+                        <strong>₹648</strong>
+
+                    </div>
+
+
+                    <!-- Checkout Link -->
+                    <a class="button button-full" href="login.html">
+                        Continue to checkout ↗
+                    </a>
+
+
+                    <!-- Static Preview Notice -->
+                    <p class="muted summary-note">
+                        This is a static front-end preview.
+                        Checkout and cart updates need JavaScript/backend integration.
+                    </p>
+
+
+                    <!-- Security Note -->
+                    <div class="secure-note">
+                        ♡ A little joy, carefully packed.
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <a class="brand brand-footer" href="index.html">
+
+                <span class="brand-mark">B</span>
+
+                <span>
+                    BookHive
+                    <small>Stories worth keeping</small>
+                </span>
+
+            </a>
+
+
+            <p>
+                For the love of stories, the joy of learning,
+                and the magic of one more page.
+            </p>
+
+
+            <!-- Footer Navigation Links -->
+            <div class="footer-links">
+
+                <a href="books.html">Browse books</a>
+
+                <a href="about.html">Our story</a>
+
+                <a href="contact.html">Get in touch</a>
+
+                <a href="login.html">My account</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright Information -->
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 BookHive. Made for readers, everywhere.
+            </span>
+
+            <span>
+                Keep turning pages. ✦
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

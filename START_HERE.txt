@@ -1,0 +1,13 @@
+BOOKHIVE — START HERE
+
+1. Extract bookhive_html_css.zip to a folder.
+2. Open the extracted bookhive folder in Visual Studio Code.
+3. Open index.html with the Live Server extension, or double-click index.html to open it in your browser.
+4. Use the navbar to open Books, About, Contact, Bag, Login and Sign up pages.
+5. CSS files are in css/:
+   - style.css: shared colors, typography, header, footer and base styling
+   - home.css: home page hero, featured books and categories
+   - books.css: catalog, book details, cart, authentication, about and contact pages
+   - responsive.css: tablet and mobile layout rules
+
+IMPORTANT: Per request, JavaScript functionality has not been implemented. Search/filter, cart updates, checkout and form submission are static UI only. This project is the HTML + CSS milestone from the PDF.
